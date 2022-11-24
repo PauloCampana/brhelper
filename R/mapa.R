@@ -10,19 +10,19 @@
 #'
 #' @details Os mapas possuem qualidades diferentes, máxima para País, Região, Estado e Mesorregião, qualidade intermediária para Microrregião e qualidade mínima para Município.
 #' @source <https://servicodados.ibge.gov.br/api/docs/malhas>
-#' @name brasil_mapa
+#' @name mapa
 #' @keywords datasets
 NULL
 
-#' @rdname brasil_mapa
-"brasil_mapa_pais"
-#' @rdname brasil_mapa
-"brasil_mapa_regiao"
-#' @rdname brasil_mapa
-"brasil_mapa_estado"
-#' @rdname brasil_mapa
-"brasil_mapa_mesoregiao"
-#' @rdname brasil_mapa
-"brasil_mapa_microregiao"
-#' @rdname brasil_mapa
-"brasil_mapa_municipio"
+#' @rdname mapa
+"mapa_pais"
+#' @rdname mapa
+"mapa_regiao"
+#' @rdname mapa
+"mapa_estado"
+#' @rdname mapa
+"mapa_mesoregiao"
+#' @rdname mapa
+"mapa_microregiao"
+#' @rdname mapa
+"mapa_municipio"
