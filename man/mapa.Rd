@@ -3,11 +3,8 @@
 \docType{data}
 \name{mapa}
 \alias{mapa}
-\alias{mapa_pais}
 \alias{mapa_regiao}
 \alias{mapa_estado}
-\alias{mapa_mesoregiao}
-\alias{mapa_microregiao}
 \alias{mapa_municipio}
 \title{Mapas do Brasil}
 \format{
@@ -15,18 +12,12 @@ Uma tibble com 4 colunas e número variado de linhas:
 \describe{
 \item{long, lat}{Longitude e Latitude}
 \item{group}{Caracteriza o polígono}
-\item{id}{País, Região, Estado, Mesorregião, Microrregião ou Município}
+\item{id}{ID da Região, Estado ou Município}
 }
-
-An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 3413 rows and 4 columns.
 
 An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 6549 rows and 4 columns.
 
 An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 51746 rows and 4 columns.
-
-An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 123941 rows and 4 columns.
-
-An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 54347 rows and 4 columns.
 
 An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 139153 rows and 4 columns.
 }
@@ -34,22 +25,16 @@ An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) w
 \url{https://servicodados.ibge.gov.br/api/docs/malhas}
 }
 \usage{
-mapa_pais
-
 mapa_regiao
 
 mapa_estado
 
-mapa_mesoregiao
-
-mapa_microregiao
-
 mapa_municipio
 }
 \description{
-Mapas do Brasil com polígonos contendo informação sobre Região, Estado, Mesorregião, Microrregião ou Município que o polígono faz parte.
+Mapas do Brasil com polígonos contendo informação sobre Região, Estado ou Município que o polígono faz parte.
 }
 \details{
-Os mapas possuem qualidades diferentes, máxima para País, Região, Estado e Mesorregião, qualidade intermediária para Microrregião e qualidade mínima para Município.
+Os mapas possuem qualidades diferentes, máxima para Região e Estado, qualidade mínima para Município.
 }
 \keyword{datasets}

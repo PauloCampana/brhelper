@@ -21,5 +21,5 @@ Converte entre IDs, Nome, Sigla, Capital ou Região de um Estado.
 }
 \examples{
 converter_estado("TO", de = "sigla", para = "nome")
-mapa_estado$id |> converter_estado(para = "nome")
+converter_estado(unique(mapa_estado$id), para = "nome")
 }

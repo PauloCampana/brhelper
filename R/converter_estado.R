@@ -10,10 +10,11 @@
 #'
 #' @examples
 #' converter_estado("TO", de = "sigla", para = "nome")
-#' mapa_estado$id |> converter_estado(para = "nome")
+#' converter_estado(unique(mapa_estado$id), para = "nome")
 converter_estado <- function(x, de = "id", para) {
     if (de == "id") brhelper::dados_estado[[para]][x]
     else brhelper::dados_estado[[para]][brhelper::dados_estado[[de]] == x]
 }
+converter_estado <- Vectorize(converter_estado, vectorize.args = "x")
 
 
