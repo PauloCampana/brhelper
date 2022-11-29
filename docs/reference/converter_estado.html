@@ -50,7 +50,7 @@
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">converter_estado</span><span class="op">(</span><span class="va">x</span>, de <span class="op">=</span> <span class="st">"id"</span>, <span class="va">para</span><span class="op">)</span></span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">converter_estado</span><span class="op">(</span><span class="va">x</span>, <span class="va">de</span>, <span class="va">para</span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div id="arguments">
@@ -79,7 +79,7 @@
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">converter_estado</span><span class="op">(</span><span class="st">"TO"</span>, de <span class="op">=</span> <span class="st">"sigla"</span>, para <span class="op">=</span> <span class="st">"nome"</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>          TO </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> "Tocantins" </span>
-<span class="r-in"><span><span class="fu">converter_estado</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/unique.html" class="external-link">unique</a></span><span class="op">(</span><span class="va">mapa_estado</span><span class="op">$</span><span class="va">id</span><span class="op">)</span>, para <span class="op">=</span> <span class="st">"nome"</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu">converter_estado</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/unique.html" class="external-link">unique</a></span><span class="op">(</span><span class="va">mapa_estado</span><span class="op">$</span><span class="va">id</span><span class="op">)</span>, de <span class="op">=</span> <span class="st">"id"</span>, para <span class="op">=</span> <span class="st">"nome"</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  [1] "Rondônia"            "Acre"                "Amazonas"           </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  [4] "Roraima"             "Pará"                "Amapá"              </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  [7] "Tocantins"           "Maranhão"            "Piauí"              </span>

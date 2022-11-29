@@ -9,8 +9,14 @@
 #' @return URL contendo arquivo GEOJSON da respectiva malha geográfica.
 #' @export
 #'
-#' @examples mapa_url(divisao = "estado")
-mapa_url <- function(nivel = "pais", id = "BR", divisao, qualidade = "max") {
+#' @examples
+#' # mapa dos Estados do Brasil
+#' mapa_url(divisao = "estado")
+#' # mapa dos municípios da Paraíba
+#' mapa_url(nivel = "estado", id = 25, divisao = "municipio")
+mapa_url <- function(nivel = "pais", id = NULL, divisao, qualidade = "max") {
+    if (nivel == "pais") id <- "BR"
+    else if (is.null(id)) stop("apresente id")
     nivel2 <- switch(nivel,
         "pais"                = "/paises/",
         "regiao"              = "/regioes/",

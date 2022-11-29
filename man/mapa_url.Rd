@@ -4,7 +4,7 @@
 \alias{mapa_url}
 \title{Obter URL do mapa}
 \usage{
-mapa_url(nivel = "pais", id = "BR", divisao, qualidade = "max")
+mapa_url(nivel = "pais", id = NULL, divisao, qualidade = "max")
 }
 \arguments{
 \item{nivel}{Escopo do mapa, um de ("pais", "regiao", "estado", "mesoregiao", "microregiao", "regiaointermediaria", "regiaoimediata", "municipio").}
@@ -22,5 +22,8 @@ URL contendo arquivo GEOJSON da respectiva malha geográfica.
 Gera link do serviço de dados do IBGE para poder baixar arquivo GEOJSON contendo uma malha geográfica.
 }
 \examples{
+# mapa dos Estados do Brasil
 mapa_url(divisao = "estado")
+# mapa dos municípios da Paraíba
+mapa_url(nivel = "estado", id = 25, divisao = "municipio")
 }

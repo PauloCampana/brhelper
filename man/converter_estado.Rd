@@ -4,7 +4,7 @@
 \alias{converter_estado}
 \title{Converter informações sobre Estados}
 \usage{
-converter_estado(x, de = "id", para)
+converter_estado(x, de, para)
 }
 \arguments{
 \item{x}{Entrada a ser convertida.}
@@ -21,5 +21,5 @@ Converte entre IDs, Nome, Sigla, Capital ou Região de um Estado.
 }
 \examples{
 converter_estado("TO", de = "sigla", para = "nome")
-converter_estado(unique(mapa_estado$id), para = "nome")
+converter_estado(unique(mapa_estado$id), de = "id", para = "nome")
 }

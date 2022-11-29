@@ -50,7 +50,7 @@
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">mapa_url</span><span class="op">(</span>nivel <span class="op">=</span> <span class="st">"pais"</span>, id <span class="op">=</span> <span class="st">"BR"</span>, <span class="va">divisao</span>, qualidade <span class="op">=</span> <span class="st">"max"</span><span class="op">)</span></span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">mapa_url</span><span class="op">(</span>nivel <span class="op">=</span> <span class="st">"pais"</span>, id <span class="op">=</span> <span class="cn">NULL</span>, <span class="va">divisao</span>, qualidade <span class="op">=</span> <span class="st">"max"</span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div id="arguments">
@@ -80,8 +80,12 @@
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">mapa_url</span><span class="op">(</span>divisao <span class="op">=</span> <span class="st">"estado"</span><span class="op">)</span></span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co"># mapa dos Estados do Brasil</span></span></span>
+<span class="r-in"><span><span class="fu">mapa_url</span><span class="op">(</span>divisao <span class="op">=</span> <span class="st">"estado"</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] "https://servicodados.ibge.gov.br/api/v3/malhas/paises/BR?formato=application/vnd.geo+json&amp;intrarregiao=UF"</span>
+<span class="r-in"><span><span class="co"># mapa dos municípios da Paraíba</span></span></span>
+<span class="r-in"><span><span class="fu">mapa_url</span><span class="op">(</span>nivel <span class="op">=</span> <span class="st">"estado"</span>, id <span class="op">=</span> <span class="fl">25</span>, divisao <span class="op">=</span> <span class="st">"municipio"</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "https://servicodados.ibge.gov.br/api/v3/malhas/estados/25?formato=application/vnd.geo+json&amp;intrarregiao=municipio"</span>
 </code></pre></div>
     </div>
   </div>
